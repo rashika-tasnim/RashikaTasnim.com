@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rashika Tasnim Keya</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+    }
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 260px;
+      background-color: #1a1a1a;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+      margin-top: 15%;
+    }
+    .sidebar h2 {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .sidebar p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .sidebar nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px 0;
+      display: block;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .sidebar nav a:hover {
+      color: #ffcc00;
+    }
+    .content {
+      flex: 1;
+    }
+    section {
+      padding: 60px;
+      color: white;
+      position: relative;
+    }
+    .section-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+    .section-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 2;
+    }
+    .section-content {
+      position: relative;
+      z-index: 3;
+      max-width: 1000px;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    .portfolio-item {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+    }
+    .portfolio-item iframe,
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+.portfolio-left {
+  background-color: #2a2a33;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 40px 30px;
+  
+  z-index: 2;
+}
+
+.portfolio-right {
+  background-color: #1d1d25;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 40px 30px;
+  z-index: 2;
+}
+
+.portfolio-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 0;
+  position: relative;
+
+}
+.portfolio-wave-section {
+  background: linear-gradient(to bottom right, #2a2a33, #1c1c24);
+  padding: 60px 0;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.portfolio-right a {
+  color: #00e6a8;
+  font-size: 0.95em;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.portfolio-right a:hover {
+  text-decoration: underline;
+}
+
+
+.portfolio-left h4,
+.portfolio-right h4 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.portfolio-right a {
+  color: #00e6a8;
+  text-decoration: none;
+}
+
+.portfolio-right a:hover {
+  text-decoration: underline;
+}
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      line-height: 1.7;
+    }
+    .social {
+      text-align: center;
+      padding: 25px;
+    }
+    .social a {
+      color: white;
+      font-size: 40px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="./profilepic.jpeg" alt="Rashika Tasnim Keya" />
+    <h2>Rashika Tasnim Keya</h2>
+    <p>Designer | Researcher | Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#publications">Publications</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="content">
+    <section id="about">
+      <div class="section-bg" style="background: rgba(255,255,255,0.1);"></div>
+      <div class="section-overlay"></div>
+      <div class="section-content">
+        <h2>About Me</h2>
+        <p>I am a researcher and designer working at the intersection of UX/UI, VR/AR serious games, gamification, and human-computer interaction. My experience spans multiple EU projects, user experience research, accessibility, and technology-supported learning innovations.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-bg" style="background-image: url('./austin-poon-JO_S6ewBqAk-unsplash.jpg');"></div>
+      <div class="section-overlay"></div>
+      <div class="section-content">
+        <h2>Education & Experience</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Education</h3>
+            <ul>
+              <li>PhD Research Fellow in Computer Science (Norway)</li>
+              <li>MSc in Universal Design of ICT</li>
+              <li>BSc in Computer Science & Engineering</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Experience</h3>
+            <ul>
+              <li>B-Prepared EU Project: AR/VR Emergency Training (Norway)</li>
+              <li>Research Assistant- Insight SFI centre for data analytics (Ireland)</li>
+              <li>Frotned Developer & UX Accessibility Consultant (Bangladesh)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="portfolio" class="portfolio-wave-section">
+  <h2 style="text-align: center; margin-bottom: 40px;">Portfolio</h2>
+
+  <div class="portfolio-container">
+    <!-- Left: AR App -->
+    <div class="portfolio-left">
+      <h4>AR Flood Safety Mobile App</h4>
+      <p>Design exploration to design gamified mobile AR app for flood preparedness guide.</p><br>
+      <video width="100%" height="240" controls>
+        <source src="./Mobile app.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Right: UX Research + Figma -->
+    <div class="portfolio-right">
+      <div class="portfolio-item" style="background-color: transparent; padding: 0;">
+        <h4>UX Research</h4>
+        <p>User behavior and interaction evaluation in a VR emergency training simulation.</p><br>
+        <video width="100%" height="240" controls>
+          <source src="./B-prepared video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="portfolio-item" style="margin-top: 40px; background-color: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px;">
+        <h4>Figma: Hotel Booking App</h4>
+        <p><a href="https://www.figma.com/proto/jzyNQzLu8tD7mAPgB9aEds/Untitled?node-id=36-48&starting-point-node-id=36%3A48&t=8YRnd7VLhynv0SkO-1" target="_blank">Open Interactive Prototype</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="publications">
+      <div class="section-bg" style="background-image: url('./janko-ferlic-sfL_QOnmy00-unsplash.jpg');"></div>
+      <div class="section-overlay"></div>
+      <div class="section-content">
+        <h2>Publications</h2>
+        <ul>
+          <li>Keya, R. T. et al. (2024). Pathways for Integrating Digital Preparedness Tools into Higher Education. In European Conference on Knowledge Management (ECKM).</li>
+          <li>Keya, R. T. et al. (Submitted 2025). Towards Implementing Virtual Reality for Evacuation Preparedness at Schools. Journal Computers (MDPI).</li>
+          <li>Keya, R. T. et al. (2024).Emergency Preparedness Training Using Virtual Reality Games: Allowing Knowledge Transfer in the Digital Age. https://doi.org/10.34190/eckm.25.1.2890•</li>
+           <li>Keya, R. T. et al. (2022). Is carousel interaction really usable? First Monday, 27(1). https://doi.org/10.5210/fm.v27i1.11801</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <div class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1521120098171-59f4f07a3b2c?auto=format&fit=crop&w=1470&q=80');"></div>
+      <div class="section-overlay"></div>
+      <div class="section-content">
+        <h2>Hobbies</h2>
+        <p>Traveling, Writing Memoirs, Playing guitar, Exploring culture, blogging.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-bg" style="background-image: url('./daniel-korpai-HyTwtsk8XqA-unsplash.jpg');"></div>
+      <div class="section-overlay"></div>
+      <div class="section-content">
+        <h2>Contact</h2>
+        <p>Email: rashikatasnim@gmail.com</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/rashika-tasnim-225956119/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/rashika-tasnim?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/rashika_tasnim" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
