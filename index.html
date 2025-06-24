@@ -209,31 +209,30 @@
       margin: 0 10px;
     }
  
-.hobby-container {
+.hobby-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+  z-index: 3;
+  padding: 60px 40px;
   gap: 30px;
-  padding: 20px 0;
 }
 
-.hobby-left,
-.hobby-right {
-  flex: 1 1 300px;
+.hobby-left {
+  width: 50%;
+  color: white;
+  z-index: 2;
 }
 
 .hobby-right {
-  transform: rotate(-2deg);
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 15px 20px;
-  border-radius: 10px;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.hobby-right h3 {
-  color: #ffc107;
-  margin-bottom: 10px;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .hobby-right ul {
@@ -346,10 +345,10 @@
       </div>
     </section>
 
- <section id="hobbies">
-  <div class="section-bg"></div>
-  <div class="section-overlay hobby-container"></div>
-  <div class="section-content hobby-container">
+<section id="hobbies">
+  <div class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1521120098171-59f4f07a3b2c?auto=format&fit=crop&w=1470&q=80');"></div>
+  <div class="section-overlay"></div>
+  <div class="section-content hobby-wrapper">
     <div class="hobby-left">
       <h2>Hobbies</h2>
       <p>Traveling, Writing Memoirs, Playing guitar, Exploring culture, blogging.</p>
@@ -366,7 +365,6 @@
     </div>
   </div>
 </section>
-
 
 
     <section id="contact">
