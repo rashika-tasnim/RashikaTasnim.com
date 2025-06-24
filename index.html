@@ -193,7 +193,37 @@
 .portfolio-right a:hover {
   text-decoration: underline;
 }
+.angled-section {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: none;
+}
+#hobbies {
+  display: flex;
+  background-color: #2f2f2f;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+.angled-left {
+  flex: 1;
+  background-color: #2f2f2f;
+  padding: 50px 40px;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.angled-right {
+  flex: 1.2;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./tom-barrett-M0AWNxnLaMw-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding:80px 30px 90px 80px;
+  clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
+}
     ul {
       list-style-type: disc;
       margin-left: 20px;
@@ -209,41 +239,7 @@
       margin: 0 10px;
     }
  
-.hobby-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  position: relative;
-  z-index: 3;
-  padding: 60px 40px;
-  gap: 30px;
-}
 
-.hobby-left {
-  width: 50%;
-  color: white;
-  z-index: 2;
-}
-
-.hobby-right {
-  width: 50%;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: white;
-  padding: 30px;
-  border-radius: 12px;
-  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.hobby-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.hobby-right li {
-  margin-bottom: 6px;
-}
 
   </style>
 </head>
@@ -345,15 +341,12 @@
       </div>
     </section>
 
-<section id="hobbies">
-  <div class="section-bg" style="background-image: url('https://images.unsplash.com/photo-1521120098171-59f4f07a3b2c?auto=format&fit=crop&w=1470&q=80');"></div>
-  <div class="section-overlay"></div>
-  <div class="section-content hobby-wrapper">
-    <div class="hobby-left">
+  <section id="hobbies" class="angled-section">
+    <div class="angled-left">
       <h2>Hobbies</h2>
       <p>Traveling, Writing Memoirs, Playing guitar, Exploring culture, blogging.</p>
     </div>
-    <div class="hobby-right">
+    <div class="angled-right">
       <h3>Places I’ve Lived</h3>
       <ul>
         <li>Budapest, Hungary</li>
@@ -363,9 +356,7 @@
         <li>Dhaka, Bangladesh</li>
       </ul>
     </div>
-  </div>
-</section>
-
+  </section>
 
     <section id="contact">
       <div class="section-bg" style="background-image: url('./daniel-korpai-HyTwtsk8XqA-unsplash.jpg');"></div>
