@@ -157,7 +157,14 @@
   height: 320px;
   margin-top: 16px;
   border-radius: 8px;
-   object-fit: contain;
+  object-fit: contain;
+}
+.portfolio-item video.floodvr-video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #000;
 }
 
 .portfolio-item a {
@@ -247,13 +254,16 @@
       <div class="section-overlay"></div>
       <div class="section-content">
         <h2>About Me</h2>
-        <p>I am a computer science researcher with experience in data analysis, accessible web development, and the evaluation and testing of digital technologies. I use Python, SQL, databases, and data-visualisation tools to analyse datasets and communicate findings. My development work includes web, mobile, VR, and AR applications, with a focus on universal design, accessibility, usability, and inclusive technology.
+        <p> I am a developer, data analyst, and computer science researcher with experience building accessible web applications, interactive prototypes, and digital training tools. 
+          My work spans web, mobile, VR, and AR development, as well as the analysis and visualisation of behavioural and operational data. 
+          I apply principles of universal design, accessibility, usability, and inclusive technology throughout my development and evaluation work.
     </p><br>
     <p>My experience includes:</p><br>
     <ul>
-    <li> Cleaning, analysing, and visualising behavioural and operational data. </li>
-    <li> Developing accessible web applications, interactive prototypes, and digital training tools.</li>
-    <li> Performing accessibility, usability, regression, manual, and automated testing of digital applications.</li>
+    <li> Building responsive web applications using React, Next.js, TypeScript, JavaScript, HTML, CSS, and Supabase. </li>
+    <li> Developing accessible and multimodal interfaces, interactive prototypes, and mobile, VR, and AR applications.</li>
+    <li> Evaluating functionality, accessibility, usability, and regression through manual and automated testing.</li>
+    <li> Cleaning, analysing, and visualising behavioural and operational data using Python, SQL, databases, and data-visualisation tools.</li>
     </ul>
       </div>
     </section>
@@ -290,41 +300,23 @@
     <div class="portfolio-row">
       <div class="portfolio-item">
         <h4>Multimodal-Accessible-Kiosk</h4>
-        <p>Accessible Web Development</p><br>
+        <p>React-based accessible kiosk with touch, keyboard, voice and hands-free navigation.</p><br>
         <img src="./Kiosk-thumbnail.png" alt="Multimodal-Accessible-Kiosk">
         <p><a href="https://rashika-tasnim.github.io/multimodal-accessible-kiosk/" target="_blank" rel="noopener noreferrer">Multimodal-Accessible-Kiosk</a></p>
       </div>
 
       <div class="portfolio-item">
         <h4>Second-Circle-Marketplace</h4>
-        <p>Sports data analysis and relational database design.</p><br>
+        <p>Full-stack marketplace with authentication, listings, saved items, image uploads and seller messaging.</p><br>
         <img src="./second-circle-thumbnail.png" alt="Sports data relational database design">
         <p><a href="https://second-circle-marketplace.vercel.app/" target="_blank" rel="noopener noreferrer">View project on GitHub</a></p>
       </div>
     </div>
-
-    <!-- Row 2: Data projects -->
-    <div class="portfolio-row">
-      <div class="portfolio-item">
-        <h4>EU Disaster Data Analysis</h4>
-        <p>Data Analysis</p><br>
-        <img src="./disaster-thumbnail.png" alt="European disaster data charts">
-        <p><a href="https://github.com/rashika-tasnim/Disaster-python-project" target="_blank" rel="noopener noreferrer">Disaster Data Analysis</a></p>
-      </div>
-
-      <div class="portfolio-item">
-        <h4>Sports Data Analysis</h4>
-        <p>Sports data analysis and relational database design.</p><br>
-        <img src="./Relational-database-design.png" alt="Sports data relational database design">
-        <p><a href="https://github.com/rashika-tasnim/GAA-Player-Sports-Data-Analysis" target="_blank" rel="noopener noreferrer">View project on GitHub</a></p>
-      </div>
-    </div>
-
-    <!-- Row 3: Game Development projects -->
+ <!-- Row 2: Game Development projects -->
     <div class="portfolio-row">
       <div class="portfolio-item">
         <h4>AR Flood Safety Mobile App</h4>
-        <p>AR game design and development on Unity.</p><br>
+        <p>Unity-based mobile AR application for flood-preparedness learning and interactive safety tasks.</p><br>
         <video controls>
           <source src="./Mobile app.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -333,18 +325,34 @@
 
       <div class="portfolio-item">
         <h4>Web-Based Games (HTML5)</h4>
-        <p>Interactive browser-based safety games.</p><br>
+        <p>Interactive HTML5 games for practising fire-safety decisions.</p><br>
         <img src="./Fire-game.png" alt="HTML5 fire-safety game">
         <p><a href="https://rashika-tasnim.github.io/html5-Games/" target="_blank" rel="noopener noreferrer">Open Interactive Prototype</a></p>
+      </div>
+    </div>
+    <!-- Row 3: Data projects -->
+    <div class="portfolio-row">
+      <div class="portfolio-item">
+        <h4>EU Disaster Data Analysis</h4>
+        <p>Analysis and visualisation of European disaster patterns using Python and EM-DAT data.</p><br>
+        <img src="./disaster-thumbnail.png" alt="European disaster data charts">
+        <p><a href="https://github.com/rashika-tasnim/Disaster-python-project" target="_blank" rel="noopener noreferrer">Disaster Data Analysis</a></p>
+      </div>
+
+      <div class="portfolio-item">
+        <h4>Sports Data Analysis</h4>
+        <p>Relational database design and SQL-based analysis of Gaelic Athletic Association sports data.</p><br>
+        <img src="./Relational-database-design.png" alt="Sports data relational database design">
+        <p><a href="https://github.com/rashika-tasnim/GAA-Player-Sports-Data-Analysis" target="_blank" rel="noopener noreferrer">View project on GitHub</a></p>
       </div>
     </div>
 
     <!-- Row 4: Evaluation and design projects -->
     <div class="portfolio-row">
       <div class="portfolio-item">
-        <h4>UX Research</h4>
-        <p>User behavior and interaction evaluation in a VR Flood Alert simulation.</p><br>
-        <video controls>
+        <h4>FloodVR: VR Training Simulation</h4>
+        <p>Unreal Engine flood-preparedness simulation with repeated scenario testing and behavioural evaluation.</p><br>
+        <video class="floodvr-video" controls>
           <source src="./FloodALERT.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
